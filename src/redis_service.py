@@ -23,7 +23,7 @@ class RedisService:
         # Redis连接配置
         self.redis_host = os.getenv("REDIS_HOST")
         self.redis_port = int(os.getenv("REDIS_PORT", 6379))
-        self.redis_password = os.getenv("REDOS_PASSWORD")  # 注意这里使用REDOS_PASSWORD
+        self.redis_password = os.getenv("REDIS_PASSWORD")
         
         # 构建Redis URL
         if self.redis_password:
